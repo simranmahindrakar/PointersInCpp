@@ -1,0 +1,27 @@
+//returning pointer from a function
+
+#include <iostream>
+#include <bits/stdc++.h>
+using namespace std;
+
+int *check(int i, int j)
+{
+    int *p , *q;
+    p=&i;
+    q=&j;
+    
+    if(i>=45) {
+        return (p);
+    }
+    else {
+        return q;
+    }
+}
+    
+int main()
+{
+    int *c;
+    c = check (10,50);
+    printf(" c = %u \n", *c);
+    return 0;
+}
